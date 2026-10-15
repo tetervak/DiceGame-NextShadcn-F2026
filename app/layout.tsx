@@ -1,7 +1,6 @@
 import { Geist_Mono, Roboto } from "next/font/google"
 
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -30,7 +29,6 @@ export default function RootLayout({
       )}
     >
       <body>
-        <ThemeProvider>
           <div className="flex min-h-screen flex-col justify-between">
             <div>
               <Header title="Dice Game" />
@@ -40,7 +38,6 @@ export default function RootLayout({
             </div>
             <Footer name="Alex Tetervak" />
           </div>
-        </ThemeProvider>
       </body>
     </html>
   )
